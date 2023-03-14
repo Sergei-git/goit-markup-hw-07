@@ -1,6 +1,5 @@
 @media screen and (min-width: 1200px) {
   .container {
-    /* max-width: 1200px; */
     max-width: 1158px;
   }
 
@@ -8,9 +7,12 @@
     padding: 188px 0;
   }
 
+  .header-list {
+    margin-right: 0;
+  }
+
   .adress-list {
     display: flex;
-    /* display: block; */
     margin-left: auto;
   }
 
@@ -24,10 +26,11 @@
   }
 
   .header > .container {
-    justify-content: center;
+    display: block;
   }
 
   .overlay {
+    max-width: 1440px;
     height: 600px;
     background-image: var(--l-grad), url(../images/People-office-bg-desktop.jpg);
   }
@@ -70,7 +73,16 @@
     margin-right: 0;
   }
 
+  .features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
   .doing {
+    display: block;
     padding-bottom: 120px;
   }
 
@@ -109,8 +121,13 @@
     padding-bottom: 120px;
   }
 
+  .customers-list {
+    row-gap: 0;
+    column-gap: 24px;
+  }
+
   .customers-item {
-    width: calc((100% - 80px) / 6);
+    width: calc((100% - 120px) / 6);
   }
 
   .team-item {
